@@ -26,7 +26,6 @@ export default function Home() {
         <Digital/>
         {/* <CaseStudies/> */}
         <CTA/>
-        <Footer/>
     </div>
   );
 }
