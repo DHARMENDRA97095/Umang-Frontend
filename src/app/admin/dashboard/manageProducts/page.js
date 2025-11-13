@@ -5,13 +5,13 @@ import {FileText} from "lucide-react";
 import AddProducts from "@/components/admin/AddProducts";
 import axios from "axios";
 import { toast } from "react-toastify";
-import ProductTableRow from '@/components/admin/ProductTableRows';
+import ProductTableRow from '@/components/admin/ProductTableRows'
 
 
 
 
 
-export default function productsSection() {
+export default function Page() {
     
     const [loading, setLoading]=useState(false)
     const [categories,setCategories] = useState([])

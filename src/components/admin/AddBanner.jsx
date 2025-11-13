@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ImagePlus } from "lucide-react";
+import Image from "next/image";
 // Assuming 'generateURL' and 'ToastContainer/toast' are correctly imported and defined in your environment
 // import generateURL from "@/utils/urlGenerater"; 
 // import { ToastContainer, toast, Bounce } from "react-toastify";
@@ -196,10 +197,12 @@ export default function AddBanner({ rows, setRows }) {
             <div className="mt-4">
               <p className="text-xs text-gray-500 mb-2">Image Preview:</p>
               <div className="border p-1 inline-block rounded-lg shadow-sm">
-                <img
+                <Image
                   src={URL.createObjectURL(banner.image)}
                   alt="Banner Preview"
                   className="w-48 h-24 object-cover rounded-md"
+                  height={200}
+                  width={200}
                 />
               </div>
             </div>

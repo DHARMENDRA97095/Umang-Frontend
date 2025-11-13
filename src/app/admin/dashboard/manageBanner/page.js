@@ -14,6 +14,7 @@ import { updateOrder } from "@/utils/updateOrder";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import axios from "axios";
 import ActionButton from "@/components/admin/ActionButton";
+import Image from "next/image";
 
 
 
@@ -163,10 +164,11 @@ export default function BannersSection() {
                                   <td className="py-4 px-4 text-center">{item.title}</td>
 
                                   <td className="py-4 px-4 flex items-center justify-center gap-4">
-                                    <img
+                                    <Image
                                       src={item.image.url}
                                       alt={`banner-${item.title}`}
                                       className="w-24 h-16 object-cover rounded"
+                                      fill
                                     />
                                   </td>
 

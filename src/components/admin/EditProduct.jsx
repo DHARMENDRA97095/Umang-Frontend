@@ -123,10 +123,12 @@ const onSubmit = async (data)=>{
                 {/* Image Preview */}
                 {imageFile && (
                   <div className="mt-4 border p-1 inline-block rounded-lg shadow-sm">
-                    <img
+                    <Image
                       src={URL.createObjectURL(imageFile)}
                       alt="Product Preview"
                       className="w-24 h-24 object-cover rounded-md"
+                      fill
+                      
                     />
                   </div>
                 )}
