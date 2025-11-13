@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.associations": {
+      "*.js": "javascriptreact",
+      "*.ts": "typescriptreact"
+    },
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  }

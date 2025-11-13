@@ -1,0 +1,19 @@
+/* Custom utility class to create the downward arch cutout */
+.arch-cutout {
+    /* This creates a white element matching the background below it */
+    position: relative; 
+    /* The ::after element will be the cutout shape */
+  }
+  
+  .arch-cutout::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Overlap to hide seam */
+    left: 0;
+    width: 100%;
+    height: 80px; /* Controls how deep the arch is */
+    background: white; /* Change this to match the color of the section below */
+    /* Creates the wide, shallow arch cutout */
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+  }
