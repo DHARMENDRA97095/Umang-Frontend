@@ -1,7 +1,9 @@
+"use client";
 // components/ProductCard.jsx
-import Image from 'next/image';
-import { useState } from 'react';
-import ProductModal from './ProductModal'; // Import the new modal component
+
+import Image from "next/image";
+import { useState } from "react";
+import ProductModal from "./ProductModal"; // Import the new modal component
 
 const ProductCard = ({ product }) => {
   // State to manage the visibility of the modal
@@ -15,69 +17,66 @@ const ProductCard = ({ product }) => {
   return (
     <>
       {/* Product Card Container */}
-      <div className="max-w-sm overflow-hidden rounded-xl bg-white shadow-lg transition-transform duration-300 hover:scale-[1.02] ">
-        
-        {/* Product Image */}
+      <div className="w-full max-w-sm overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+        {/* Image */}
         <div className="relative h-64 w-full">
           <Image
-            src={image.url}
+            src={image?.url || "/image/placeholder.jpg"}
             alt={name}
-            layout="fill"
-            objectFit="fill"
-            className="rounded-t-xl"
+            fill
+            className="rounded-t-xl object-cover"
           />
         </div>
 
-        {/* Product Details */}
-        <div className="p-5">
-          
-          {/* Product Name (Capitalize) */}
-          <h2 className="mb-2 text-2xl font-bold capitalize text-gray-900 ">
+        {/* Content */}
+        <div className="p-5 flex flex-col flex-grow">
+          <h2 className="mb-2 text-xl font-bold capitalize text-gray-900">
             {name}
           </h2>
-          
-          {/* Product Description (Line-Clamp) */}
-          <p className="mb-1 text-base text-gray-600 line-clamp-2">
-            {description}
-          </p>
 
-          {/* Additional Features (Variable) - Keeping the truncated view here */}
-          <div className="mt-1 border-t border-gray-200 pt-4 ">
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-indigo-600 ">
+          <p className="text-sm text-gray-600 line-clamp-2">{description}</p>
+
+          <div className="mt-4 border-t pt-4">
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-indigo-600">
               Features
             </h3>
+
             <ul className="space-y-2">
-              {features.slice(0, 3).map((feature, index) => ( // Show max 3 features on the card
-                <li key={index} className="flex items-start text-sm text-gray-700 ">
-                  <svg className="mr-2 h-5 w-5 flex-shrink-0 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              {features.slice(0, 3).map((feature, index) => (
+                <li
+                  key={index}
+                  className="flex items-start text-sm text-gray-700"
+                >
+                  <svg
+                    className="mr-2 h-4 w-4 text-green-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="first-letter:capitalize">{feature.title}: { feature?.badge}</span>
+                  <span className="capitalize">
+                    {feature.title}
+                    {feature.badge && `: ${feature.badge}`}
+                  </span>
                 </li>
               ))}
-              {features.length > 3 && (
-                <li className="text-sm text-indigo-500 italic">...and {features.length - 3} more details</li>
-              )}
             </ul>
           </div>
-          
-          {/* Action Button: Triggers the Modal */}
-          <button 
-            onClick={openModal} // Handler to open the modal
-            className="mt-6 w-full rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition duration-200 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-          >
-            View Details
-          </button>
 
+          <button className="mt-6 w-full rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700">
+            View Detail
+          </button>
         </div>
       </div>
 
       {/* The Product Modal Component */}
-      <ProductModal 
-        product={product} 
-        isOpen={isOpen} 
-        onClose={closeModal} 
-      />
+      <ProductModal product={product} isOpen={isOpen} onClose={closeModal} />
     </>
   );
 };

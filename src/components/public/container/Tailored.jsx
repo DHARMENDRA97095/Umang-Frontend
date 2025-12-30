@@ -55,12 +55,13 @@ function Tailored() {
 
         {/* Right Content (Trusted by) */}
         <div className="lg:w-5/12 mb-12 lg:mb-0 ">
-          <Badge>Tailored Service</Badge>
-          <PrimaryHeading>Driven by innovation</PrimaryHeading>
+          <Badge>About Us Section</Badge>
+          <PrimaryHeading>Who We Are</PrimaryHeading>
           <Paragraph>
-            Our team of experts combines deep technical knowledge with creative
-            thinking to develop AI-driven strategies that drive efficiency, and
-            growth.
+            Exobase Private Limited is a professionally managed agro-export company specializing in 
+            the export of premium rice and pulses. Based in Nagpur, Maharashtra, we are committed to 
+            delivering agricultural products that meet international quality standards while maintaining 
+            competitive pricing and timely delivery.
           </Paragraph>
         </div>
       </div>

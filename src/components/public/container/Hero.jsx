@@ -81,24 +81,24 @@ export const Hero = () => {
                 <div className="lg:w-3/5 mb-12 lg:mb-0 flex flex-col items-center justify-center md:block">
                     {/* Main Heading - large, bold, and tightly spaced */}
                     <h1 className="text-center md:text-left text-5xl sm:text-7xl lg:text-8xl xl:text-7xl font-extrabold leading-none tracking-tighter mb-6 text-black">
-                        AI Strategy for businesses
+                        Delivering Premium Quality Rice to Global Markets
                     </h1>
                     
                     {/* Description */}
                     <p className="max-w-md text-base sm:text-lg font-medium text-gray-700 mb-10 text-center md:text-left">
-                        We create unique, tailor-made website designs that perfectly reflect your brand identity and engage your target audience.
+                        Exobase Private Limited is a trusted exporter of high-quality rice and pulses, delivering excellence from Indian farms to international destinations with consistency, purity, and reliability.
                     </p>
                     
                     {/* CTA Buttons */}
                     <div className="flex space-x-4">
                         {/* Get in Touch (Black button) */}
                         
-                        <Button  className={'bg-black text-white hover:text-black'} >Get in Touch</Button>
+                        <Button  className={'bg-black text-white hover:text-black'} >Explore Products</Button>
 
 
                         {/* View Works (Light button) */}
 
-                        <Button  className={'bg-gray-200 text-black'} >View Work</Button>
+                        <Button  className={'bg-gray-200 text-black'} >Contact Us</Button>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@ export const Hero = () => {
                 </div>
             </div>
         </Section>
-            <Video/>
+            {/* <Video/> */}
         </main>
     );
 }

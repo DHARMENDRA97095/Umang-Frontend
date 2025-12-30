@@ -17,8 +17,7 @@ export default function Home() {
 
   return (
     <div className="relative font-sans antialiased ">
-        {/* <Header />
-        <ScrollTracker/> */}
+       
         <Hero />
         <Inovation/>
         <Tailored/>

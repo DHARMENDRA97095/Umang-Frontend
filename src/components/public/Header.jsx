@@ -9,7 +9,7 @@ export const Header = () => (
       <div className="hidden sm:flex px-4 md:px-12 justify-between items-center text-xs font-medium text-gray-700 mb-4 border-b border-gray-200/50 pb-2">
           <div className="flex space-x-6 text-[14px]">
               {/* Contact Info */}
-              {[[<PhoneCall size={18} className="text-gray-500"/>,'+1 234 9091'], [<AtSign/>,'starthub@email.com'], [<UserCircle/>,'5th Ave, NYC']].map((info, index) => (
+              {[[<PhoneCall size={18} className="text-gray-500"/>,'+91 99228-33338'], [<AtSign/>,'info@axios.com']].map((info, index) => (
                   <span key={index} className="flex items-center space-x-2">
                       {/* Placeholder Icon */}
                       {info[0]}
@@ -43,9 +43,9 @@ export const Header = () => (
   
         {/* Center Section: Navigation Links (The prominent pill-shaped area) */}
         <nav className="hidden lg:flex bg-white/60 backdrop-blur-md rounded-md p-1 shadow-xl border border-white top-0">
-          {['Home', 'About', 'Solutions', 'Services', 'Contact'].map((item) => (
+          {['Home', 'About', 'Product', 'Contact'].map((item) => (
             <a
-              key={item}
+              key={item}  
               href={item == 'Home'?`/`:`/${item.toLowerCase()}`}
               className={`px-5 py-2 text-sm font-medium rounded-md mx-2 transition-colors duration-200 ${
                 item === 'Home' 

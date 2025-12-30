@@ -52,4 +52,4 @@ const Card = ({i, title, description, src, url, color, progress, range, targetSc
   )
 }
 
-export default Card
+export default Card;
