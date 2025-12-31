@@ -51,13 +51,15 @@ export default function BlogCategories({rows, setRows}) {
       credentials: "include", 
       body: JSON.stringify(category)
     }).then((res)=>(res.json()));
+    console.log(response);
+    
     if (response.success){
       setRows((prev)=>([...prev,response.data]))
       toast.success("Data saved successfully");
 
     }
     else{
-      toast.error(data.message)
+      toast.error(response.message)
     }
     
 

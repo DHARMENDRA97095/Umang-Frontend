@@ -43,7 +43,7 @@ export const Header = () => (
   
         {/* Center Section: Navigation Links (The prominent pill-shaped area) */}
         <nav className="hidden lg:flex bg-white/60 backdrop-blur-md rounded-md p-1 shadow-xl border border-white top-0">
-          {['Home', 'About', 'Product', 'Contact'].map((item) => (
+          {['Home', 'About', 'Product', 'Blog', 'Contact'].map((item) => (
             <a
               key={item}  
               href={item == 'Home'?`/`:`/${item.toLowerCase()}`}
