@@ -12,7 +12,7 @@ const CardContent = ({ children, link }) => {
     const title = children[0]?.props?.children;
     const paragraph = children[1]?.props?.children;
 
-    return (
+    return (    
         <div className="cardBottom absolute bottom-0 px-5 py-5 w-full bg-white/60 backdrop-blur-xl flex flex-col gap-2">
             <h1 className='text-xl text-black font-extrabold'>{title}</h1>
             <p className='text-sm text-ellipsis line-clamp-2'>{paragraph}</p>

@@ -1,24 +1,48 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Section from "../Section";
 import Button from "../Button";
 import Image from "next/image";
+import Link from "next/link";
+import Form from "../Form";
 
 function CTA() {
+    const [showform, setShowForm] = useState(false);
   return (
     <Section className=" ">
       {/* Content Container */}
       <div className="max-w-7xl mx-auto flex flex-col  justify-between items-center ">
         <div className="relative z-[-301] flex md:gap-15 gap-2 justify-center items-center">
-          <div><Image src="/image/logo/partner.svg" alt="Logo" height={150} width={150}/></div>
+          <div>
+            <Image
+              src="/image/logo/partner.svg"
+              alt="Logo"
+              height={150}
+              width={150}
+            />
+          </div>
           <div className="h-10 w-[2px] rounded bg-gray-400"></div>
-          <div><Image src="/image/logo/partner.svg" alt="Logo" height={150} width={150}/></div>
+          <div>
+            <Image
+              src="/image/logo/partner.svg"
+              alt="Logo"
+              height={150}
+              width={150}
+            />
+          </div>
           <div className="h-10 w-[2px] rounded bg-gray-400"></div>
-          <div><Image src="/image/logo/partner.svg" alt="Logo" height={150} width={150}/></div>
+          <div>
+            <Image
+              src="/image/logo/partner.svg"
+              alt="Logo"
+              height={150}
+              width={150}
+            />
+          </div>
         </div>
         <div>
           <div className="relative z-30 flex flex-col items-center text-center mt-20 sm:mt-24 md:mt-32 ">
             <section className="relative  flex flex-col items-center justify-center  px-4 ">
-
               {/* Large Central White Oval/Cloud */}
               <div
                 className="absolute top-0  w-full max-w-[300px] h-[270px] sm:h-[270px] lg:h-[270px] 
@@ -28,7 +52,8 @@ function CTA() {
                   width: "90%",
                   maxWidth: "850px",
                   transform: "scaleY(1.3)",
-                }}></div>
+                }}
+              ></div>
 
               <div className="absolute z-[-300]   w-sm h-10 bottom-80 md:bottom-90 animate-custom-bounce">
                 {/* Floating Spheres (Styled to match the design) */}
@@ -55,12 +80,21 @@ function CTA() {
 
                 {/* CTA Buttons */}
                 <div className="flex space-x-4">
-                  <Button className="bg-gray-900 text-white hover:bg-gray-300 hover:text-gray-900 hover:border-2 hover:border-gray-900">
+                  <Button
+                    className="bg-gray-900 text-white hover:bg-gray-300 hover:text-gray-900 hover:border-2 hover:border-gray-900"
+                    onClick={() => setShowForm(true)}
+                  >
                     Get In Touch
                   </Button>
-                  <Button className="bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 hover:border-2 hover:border-gray-900">
-                    View Works
-                  </Button>
+                  <Form
+                    isVisible={showform}
+                    onClose={() => setShowForm(false)}
+                  />
+                  <Link href="product">
+                    <Button className="bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 hover:border-2 hover:border-gray-900">
+                      View Product
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </section>

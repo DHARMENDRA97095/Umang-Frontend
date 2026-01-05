@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="relative overflow-x-hidden">
-        <PageTransition />
+        {/* <PageTransition /> */}
         {children}
       </body>
     </html>

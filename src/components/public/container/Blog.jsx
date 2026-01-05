@@ -33,7 +33,7 @@ const blogs = [
     title: "Cloud Computing Trends",
     description:
       "Explore how cloud-native technologies are shaping the future of scalable applications.",
-    image: "/image/premium.jpg",
+    image: "/image/about2.jpg",
     date: "Sep 12, 2025",
   },
   {

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-function Button({children, className, action}) {
+function Button({children, className, onClick, onClose}) {
   return (
     <button
         style={{
@@ -11,6 +11,8 @@ function Button({children, className, action}) {
                     shadow-md hover:bg-gray-200 
                     hover:-translate-y-1 hover:shadow-2xl hover:brightness-110
                     active:scale-95 transform ${className}`}
+        onClick={onClick}
+        onClose = {onClose}
         >
         {children}
     </button>
