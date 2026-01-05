@@ -10,9 +10,7 @@ export default function dashboardLayout({children}){
             <Sidebar/>
             <div className="main bg-[#eeeeee] w-[100%] overflow-y-scroll">
                 <Header/>
-                
             <div>{children}</div>
-                
             </div> 
             <ToastContainer
                 position="bottom-right"

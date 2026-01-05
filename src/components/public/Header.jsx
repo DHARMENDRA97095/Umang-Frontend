@@ -27,7 +27,7 @@ export const Header = () => {
               <PhoneCall size={18} className="text-gray-500" />,
               "+91 99228-33338",
             ],
-            [<AtSign />, "info@exobase.com"],
+            [<AtSign />, "info@exobase.in"],
           ].map((info, index) => (
             <span key={index} className="flex items-center space-x-2">
               {info[0]}
@@ -53,7 +53,7 @@ export const Header = () => {
           <Image
             src="/image/logo/logo2.png"
             alt="ExoBase"
-            width={150}
+            width={200}
             height={50}
           />
         </Link>

@@ -24,11 +24,13 @@ export default function Home() {
         <Tailored/>
 
         {/* <Digital2/> */}
-        <CTA/>
-        {/* <Brand/> */}
+        <Brand/>
 
-        <Digital/>
+        <CTA/>
+
+        {/* <Digital/> */}
         {/* <CaseStudies/> */}
+
         
     </div>
   );

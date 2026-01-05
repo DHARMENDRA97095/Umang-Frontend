@@ -20,11 +20,11 @@ export default function ContactInfo() {
         </div>
         <div className="flex items-center gap-3">
           <Mail className="w-6 h-6" />
-          <span>info@exobase.com</span>
+          <span>info@exobase.in</span>
         </div>
         <div className="flex items-center gap-3">
           <Phone className="w-6 h-6" />
-          <span>+47 213 5941 295</span>
+          <span>+91 9922833338, 7303122220</span>
         </div>
       </div>
     </div>

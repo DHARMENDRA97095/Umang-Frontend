@@ -13,7 +13,7 @@ export default function Home() {
         <Banner title={'About Us'} text={"Our team of experts combines deep technical knowledge with creative thinking"}/>
         <About/>
         <Team/>
-        <Achievements/>
+        {/* <Achievements/> */}
         <Brand/>
     </div>
   );

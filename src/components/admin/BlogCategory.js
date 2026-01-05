@@ -45,7 +45,7 @@ export default function BlogCategories({rows, setRows}) {
     
 
    try{
-    const response= await fetch(`${process.env.NEXT_PUBLIC_API_URL}/category/add`,{
+    const response= await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blogCategory/add`,{
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include", 
@@ -59,6 +59,7 @@ export default function BlogCategories({rows, setRows}) {
 
     }
     else{
+      console.log(response.message)
       toast.error(response.message)
     }
     
@@ -179,6 +180,7 @@ export default function BlogCategories({rows, setRows}) {
                 </button>
             </form>
         </div>
+        
     </div>
   );
 }

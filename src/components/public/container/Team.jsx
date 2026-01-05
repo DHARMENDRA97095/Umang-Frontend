@@ -21,16 +21,16 @@ const Team = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl px-4">
 
     {/* Card 1 */}
-    <div className="bg-white h-100 rounded-xl  p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+    <div className="bg-white h-110 rounded-xl  p-6 flex flex-col items-center text-center hover:shadow-xl transition">
       <img
-        src="/image/Premium.jpg"
+        src="/image/director.jpeg"
         alt="Team Member"
         className="w-50 h-50 rounded-full object-cover mb-4"
       />
-      <h3 className="text-lg font-semibold text-gray-900">John Smith</h3>
-      <p className="text-sm font-medium text-indigo-600">Project Manager</p>
+      <h3 className="text-lg font-semibold text-gray-900">Siddhika Agrawa</h3>
+      <p className="text-sm font-medium text-indigo-600">Director</p>
       <p className="text-sm text-gray-600 mt-3">
-        Leads projects with strategic planning and ensures timely delivery with quality outcomes.
+        She holds a degree in Finance from NMIMS and brings experience in consulting and business analysis to support the company’s strategic growth.
       </p>
     </div>
 

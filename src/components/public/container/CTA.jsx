@@ -12,7 +12,7 @@ function CTA() {
     <Section className=" ">
       {/* Content Container */}
       <div className="max-w-7xl mx-auto flex flex-col  justify-between items-center ">
-        <div className="relative z-[-301] flex md:gap-15 gap-2 justify-center items-center">
+        {/* <div className="relative z-[-301] flex md:gap-15 gap-2 justify-center items-center">
           <div>
             <Image
               src="/image/logo/partner.svg"
@@ -39,7 +39,7 @@ function CTA() {
               width={150}
             />
           </div>
-        </div>
+        </div> */}
         <div>
           <div className="relative z-30 flex flex-col items-center text-center mt-20 sm:mt-24 md:mt-32 ">
             <section className="relative  flex flex-col items-center justify-center  px-4 ">

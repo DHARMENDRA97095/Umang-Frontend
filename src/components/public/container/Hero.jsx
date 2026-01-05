@@ -108,7 +108,7 @@ export const Hero = () => {
           {/* Left Content (Text and Buttons) */}
           <div className="lg:w-3/5 mb-12 lg:mb-0 flex flex-col items-center justify-center md:block">
             {/* Main Heading - large, bold, and tightly spaced */}
-            <h1 className="text-center md:text-left text-5xl sm:text-7xl lg:text-8xl xl:text-7xl font-extrabold leading-none tracking-tighter mb-6 text-black">
+            <h1 className="text-center md:text-left text-3xl sm:text-5xl lg:text-6xl xl:text-5xl font-extrabold leading-none tracking-tighter mb-6 text-black">
               Delivering Premium Quality Rice to Global Markets
             </h1>
 

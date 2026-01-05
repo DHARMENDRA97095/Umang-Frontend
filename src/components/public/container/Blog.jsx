@@ -97,7 +97,7 @@ export default function BlogPage() {
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col"
             >
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-100 w-full">
                 <Image
                   src={blog.image}
                   alt={blog.title}
