@@ -21,7 +21,7 @@ const Team = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl px-4">
 
     {/* Card 1 */}
-    <div className="bg-white h-110 rounded-xl  p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+    <div className="bg-white h-100 rounded-xl  p-6 flex flex-col items-center text-center hover:shadow-xl transition">
       <img
         src="/image/director.jpeg"
         alt="Team Member"
