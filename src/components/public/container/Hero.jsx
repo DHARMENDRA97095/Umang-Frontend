@@ -3,8 +3,9 @@ import Image from "next/image";
 import Button from "../Button";
 import Section from "../Section";
 import Video from "./Video";
-import Link  from "next/link";
+import Link from "next/link";
 import { Contact } from "lucide-react";
+import TenorGif from "../TenorGif";
 
 export const Hero = () => {
   // Custom Gradient Background: Adjusted to match the soft, multi-point color distribution.
@@ -124,12 +125,14 @@ export const Hero = () => {
             <div className="flex space-x-4">
               {/* Get in Touch (Black button) */}
               <Link href="product">
-                <Button className="bg-black text-white hover:text-black">Explore Products</Button>
+                <Button className="bg-black text-white hover:text-black">
+                  Explore Products
+                </Button>
               </Link>
 
               {/* View Works (Light button) */}
               <Link href="contact">
-              <Button className={"bg-gray-200 text-black"}>Contact Us</Button>
+                <Button className={"bg-gray-200 text-black"}>Contact Us</Button>
               </Link>
             </div>
           </div>
@@ -152,6 +155,16 @@ export const Hero = () => {
                 </div>
               ))}
             </div> */}
+            <div className="image floating-image">
+              <Image
+                src="/image/ship.png"
+                alt="Export Ship"
+                width={420}
+                height={320}
+                priority
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </Section>
