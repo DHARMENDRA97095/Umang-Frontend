@@ -25,7 +25,7 @@ function Brand() {
         <PrimaryHeading className='text-gray-800 text-2xl font-semibold text-center mb-8'>Certifications and Compliance</PrimaryHeading> 
         <div className="relative w-full overflow-hidden">
 
-            <div className="flex w-max animate-scroll border-blue-500">
+            <div className="flex w-max animate-scroll">
                 {brandLogo.concat(brandLogo).map((image, index) => (
                 <div key={index} className="mx-8 flex-shrink-0 ">
                     <Image
@@ -33,7 +33,7 @@ function Brand() {
                     alt="Brand logo"
                     width={350}
                     height={200}
-                    className="object-contain border-blue-500"
+                    className="object-contain border-2 border-blue-500"
                     />
                 </div>
                 ))}

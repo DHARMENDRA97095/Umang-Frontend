@@ -155,11 +155,11 @@ export const Hero = () => {
                 </div>
               ))}
             </div> */}
-            <div className="image floating-image">
+            <div className="image floating-image -mt-4 md:-mt-10 lg:-mt-16 translate-y-[-20px]">
               <Image
                 src="/image/ship.png"
                 alt="Export Ship"
-                width={420}
+                width={500}
                 height={320}
                 priority
                 className="object-contain"
