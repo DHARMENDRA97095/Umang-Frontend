@@ -17,7 +17,7 @@ export const Header = () => {
   const navItems = ["Home", "About", "Product", "Blog", "Contact"];
 
   return (
-    <header className="absolute top-0 left-0 w-full py-3 z-3002 text-black">
+    <header className=" top-10 w-full py-3 z-3002 text-black">
       
       {/* ================= TOP BAR (Desktop Only) ================= */}
       <div className="hidden sm:flex px-4 md:px-12 justify-between items-center text-xs font-medium text-gray-700 mb-4 border-b border-gray-200/50 pb-2">

@@ -103,18 +103,23 @@ export const Hero = () => {
   ];
 
   return (
-    <main style={gradientStyle[3]} className=" ">
+    <main  className=" py-5 px-5">
+      <div className="relative px-10 overflow-hidden rounded-4xl">
+      <video autoPlay loop muted playsInline className="absolute inset-0 -z-10 h-full w-full object-cover">
+            <source src="/video/banner2.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 -z-1 bg-black opacity-50"></div>
       <Section>
-        <div className="pt-12 sm:pt-16 lg:pt-24 pb-12 sm:pb-16 lg:pb-14 flex flex-col lg:flex-row items-center md:items-start md:justify-between justify-center mt-20 lg:mt-14">
+        <div className=" sm:pt-16  pb-12 sm:pb-16 lg:pb-14 flex flex-col lg:flex-row items-center md:items-start md:justify-between justify-center ">
           {/* Left Content (Text and Buttons) */}
-          <div className="lg:w-3/5 mb-12 lg:mb-0 flex flex-col items-center justify-center md:block">
+          <div className=" mb-12 flex flex-col text-center items-center justify-center ">
             {/* Main Heading - large, bold, and tightly spaced */}
-            <h1 className="text-center md:text-left text-3xl sm:text-5xl lg:text-6xl xl:text-5xl font-extrabold leading-none tracking-tighter mb-6 text-black">
+            <h1 className="text-center  text-3xl sm:text-5xl lg:text-6xl xl:text-5xl font-extrabold leading-none tracking-tighter mb-6 text-white w-[70%]">
               Delivering Premium Quality Rice to Global Markets
             </h1>
 
             {/* Description */}
-            <p className="max-w-md text-base sm:text-lg font-medium text-gray-700 mb-10 text-center md:text-left">
+            <p className=" text-base sm:text-lg font-medium text-white mb-10 text-center  w-[50%]">
               Exobase Private Limited is a trusted exporter of high-quality rice
               and pulses, delivering excellence from Indian farms to
               international destinations with consistency, purity, and
@@ -138,37 +143,11 @@ export const Hero = () => {
           </div>
 
           {/* Right Content (Trusted by) */}
-          <div className="lg:w-2/5 flex flex-col md:items-center md:justify-center relative pt-0 lg:pt-16 ">
-            {/* Trusted by Text */}
-            {/* <p className="text-gray-750 text-md font-medium mb-2">
-              Trusted by these amazing companies
-            </p> */}
-
-            {/* Company Logos */}
-            {/* <div className="flex space-x-6 sm:space-x-12 items-end mt-4">
-              {logos.map((logo) => (
-                <div
-                  key={logo.name}
-                  className="opacity-75 transform transition-opacity duration-300 hover:opacity-100"
-                >
-                  {logo.element}
-                </div>
-              ))}
-            </div> */}
-            <div className="image floating-image -mt-4 md:-mt-10 lg:-mt-16 translate-y-[-20px]">
-              <Image
-                src="/image/ship.png"
-                alt="Export Ship"
-                width={500}
-                height={320}
-                priority
-                className="object-contain"
-              />
-            </div>
-          </div>
+          
         </div>
       </Section>
       {/* <Video/> */}
+      </div>
     </main>
   );
 };
